@@ -3,11 +3,12 @@ import kotlin.test.assertEquals
 
 internal class MainKtTest {
     @Test
+    //wrong test
     fun masterCardTest() {
         val cardType = "MasterCard"
         val amount = 2_000_000
         val recentPayments = 8_000_000
-        val expectedResult = 12020
+        val expectedResult = 100//12020
         val actualResult = result(cardType, amount, recentPayments)
         assertEquals(expectedResult, actualResult)
     }
